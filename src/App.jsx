@@ -3,10 +3,7 @@ import Tarefa from './componentes/tarefas';
 
 function App() {
   const [tarefas, setTarefas] = useState([
-    { id: 1, nome: 'Estudar React', feita: false },
-    { id: 2, nome: 'Fazer exercícios', feita: true },
-    { id: 3, nome: 'Ler um livro', feita: false },
-    { id: 4, nome: 'Ir para academia', feita: false }
+   
   ]);
 
   const [novaTarefa, setNovaTarefa] = useState('');
