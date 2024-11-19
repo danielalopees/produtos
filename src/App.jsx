@@ -35,9 +35,20 @@ function App() {
   }
 
   return (
-    <div style={{ padding: '20px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+ 
       <h1>Minha Lista de Tarefas</h1>
-      <div>
+      <div style={{
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: '20px',
+
+    maxWidth: '500px',
+    
+    
+}}>
         <input
           placeholder='Nova tarefa'
           value={novaTarefa}

@@ -9,14 +9,19 @@ function Tarefa(props) {
       backgroundColor: props.feita ? '#d4edda' : '#f8d7da', 
       padding: '10px', 
       margin: '5px', 
-      borderRadius: '5px' 
+      borderRadius: '5px',
+      maxWidth: '500px',
+      justifyContent: 'center',
+      width: '100%',
+      
+       
     }}>
       <div style={{ flex: 1 }}>
         <h3>{props.nome}</h3>
         <p>Status: {props.feita ? 'Feita' : 'Pendente'}</p>
       </div>
       
-      <button onClick={props.onToggleStatus} style={{ marginRight: '10px' }}>
+      <button onClick={props.onToggleStatus} style={{ marginRight: '10px'  }}>
         Alternar Status
       </button>
       <button onClick={props.onDelete} style={{ color: 'white', backgroundColor: '#ff4d4d', border: 'none', padding: '5px 10px', borderRadius: '5px' }}>
